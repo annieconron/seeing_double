@@ -39,3 +39,7 @@ function mousePressed() {
   clear();
 }
 
+function windowResized () {
+  resizeCanvas (window.innerWidth, window.innerHeight)
+}
+
