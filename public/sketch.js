@@ -5,9 +5,9 @@ let capture;
 let r, g, b;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(800, 600);
   capture = createCapture(VIDEO);
-  capture.size(window.innerWidth, window.innerHeight);
+  capture.size(width, height);
   capture.hide();
   noStroke();
   background(255);
@@ -37,9 +37,5 @@ function draw() {
 
 function mousePressed() {
   clear();
-}
-
-function windowResized () {
-  resizeCanvas (window.innerWidth, window.innerHeight)
 }
 
