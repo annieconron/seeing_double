@@ -7,7 +7,7 @@ let r, g, b;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   capture = createCapture(VIDEO);
-  capture.size(width, height);
+  capture.size(window.innerWidth, window.innerHeight);
   capture.hide();
   noStroke();
   background(255);
