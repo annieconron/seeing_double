@@ -1,8 +1,11 @@
+document.body.style.margin   = 0
+document.body.style.overflow = `hidden`
+
 let capture;
 let r, g, b;
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(window.innerWidth, window.innerHeight);
   capture = createCapture(VIDEO);
   capture.size(width, height);
   capture.hide();
